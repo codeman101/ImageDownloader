@@ -1,0 +1,24 @@
+{
+
+"manifest_version" : 2,
+"name" : "imageDownloader",
+"version" : "1.0",
+
+"description" : "Downloads images currently on webpage",
+
+"icons": { "48" : "icons/down-arrow-48.png"
+},
+"permissions": [
+    "activeTab",
+	"tabs",
+	"http://*/",
+        "https://*/"
+  ],
+"background": {
+    "scripts": ["background.js","content.js"]
+  },
+"browser_action": {
+    "default_icon": "icons/down-arrow-48.png",
+    "default_title": "imageDownloader"
+  }
+}
